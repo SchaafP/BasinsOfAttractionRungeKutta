@@ -69,7 +69,7 @@ void updateParticles() {
     PVector k3v = getAcc(new Body(PVector.add(x, PVector.mult(k2r, h/2)), v, 0, 0));
     PVector k3r = PVector.add(v, PVector.mult(k2v, h/2));
 
-    PVector k4v = getAcc(new Body(PVector.add(x, PVector.mult(k3r, h/2)), v, 0, 0));
+    PVector k4v = getAcc(new Body(PVector.add(x, PVector.mult(k3r, h)), v, 0, 0));
     PVector k4r = PVector.add(v, PVector.mult(k3v, h));
 
     // calculate new x and v
